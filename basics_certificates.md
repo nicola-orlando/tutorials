@@ -5,7 +5,10 @@ Obtain a new certificate (12 months duration)
 Export it in your browser, Firefox is usually better 
 
     https://ca.cern.ch/ca/help/?kbid=040111 
-    
+
+Export it in your browser, Firefox is usually better (UPDATE)
+Once downloaded in your browser, access it with keychain and export it as p12, then follow the the residual steps below. 
+
 Copy the certificate on lxplus, e.g. 
 
     scp myCertificate.p12 orlando@lxplus.cern.ch:/afs/cern.ch/user/o/orlando/.globus/
@@ -22,6 +25,8 @@ Protect the key
 Finally add your certificate to the VO, follow the instructions at the page 
 
     https://www.racf.bnl.gov/docs/howto/grid/multicertvo 
+    
+Correction to the above page: for CERN certificates, even for new certificates, you don't need them to be manually registed by the VO managers, they will get it automatically.   
     
     
 
